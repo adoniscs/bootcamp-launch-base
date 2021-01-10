@@ -152,5 +152,5 @@ header {
 /* === MODAL.ACTIVE === */
 .modal-overlay.active {
     opacity: 1;
-    visibility: vis;
+    visibility: visible;
 }
