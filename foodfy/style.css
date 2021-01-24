@@ -82,7 +82,10 @@ body {
     gap: 20px;
 }
 
-
+/* PAGINA RECEITAS */
+#receitas {
+    margin-top: 50px;
+}
 
 .receita__container--img img {
     width: 300px;
