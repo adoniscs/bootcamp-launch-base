@@ -16,7 +16,23 @@ nunjucks.configure('views', {
 })
 
 server.get('/', function(req, res) {
-    return res.render('about')
+    const about = {
+        subTitleH3: "Principais tecnologias",
+        listItems: [
+           { list: "JavaScript" },
+           { list: "TypeScript" },
+            { list: "Node.js" },
+            { list: "ReactJs" },
+            { list: "React Native" },
+        ],
+        links: [
+            { name: "Github", link: "https://github.com/Rocketseat" }, 
+            { name: "Instagram", link: "https://www.instagram.com/rocketseat_oficial/?hl=pt-br" }, 
+            { name: "Facebook", link: "https://pt-br.facebook.com/rocketseat/" }
+        ]
+    }
+
+    return res.render('about', { about })
 })
 
 server.get('/courses', function(req, res) {

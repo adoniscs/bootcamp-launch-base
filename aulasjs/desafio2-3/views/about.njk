@@ -11,26 +11,19 @@
     incrível que é o desenvolvimento de web sites.
   </p>
 
-  <h3>Principais tecnologias</h3>
+  <h3>{{ about.subTitleH3 }}</h3>
   <ul>
-    <li>JavaScript</li>
-    <li>TypeScript</li>
-    <li>NodeJs</li>
-    <li>ReactJs</li>
-    <li>React Native</li>
+    {% for li in about.listItems %}
+      <li>{{ li.list }}</li>
+    {% endfor%}
   </ul>
 </section>
 
 <footer>
-  <a href="https://github.com/Rocketseat" target="_blank">Github</a>
-  <a
-    href="https://www.instagram.com/rocketseat_oficial/?hl=pt-br"
-    target="_blank"
-    >Instagram</a
-  >
-  <a href="https://pt-br.facebook.com/rocketseat/" target="_blank"
-    >Facebook</a
-  >
+  {% for link in about.links %}
+    <a href="{{ link.link }}" target="_blank">{{ link.name }}</a>
+  {% endfor %}
+
 </footer>
 
  {% endblock %}
