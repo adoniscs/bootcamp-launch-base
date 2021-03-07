@@ -12,6 +12,13 @@ body {
     background-color: rgb(65, 64, 64);
 }
 
+.not-found {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+    display: flex;
+}
+
 header {
     background-color: #a567c2;
     padding: 10px 30px 30px;
@@ -119,6 +126,7 @@ footer a:hover {
 .card {
     background-color: #7159c1;
     cursor: pointer;
+    display: grid;
 }
 
 .card__imagem--container img {
@@ -137,6 +145,7 @@ footer a:hover {
 .card__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card__time {
